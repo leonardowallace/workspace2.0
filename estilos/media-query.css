@@ -1,0 +1,28 @@
+/* Media Query para Notebooks */
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .apps__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-auto-rows: 80px;
+    }
+
+    .apps__container a {
+        text-align: center;
+    }
+
+    .apps__container img{
+        margin-bottom: 10px;
+        width: 30px;
+    }
+
+    .logo{
+        width: 40px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+}
+
