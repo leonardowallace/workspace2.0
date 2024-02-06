@@ -1,0 +1,10 @@
+.frame{
+    display: block;
+    border: 5px solid #9DBF21;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.content .menu-visible{
+    margin-top: 80px;
+}
