@@ -3,8 +3,12 @@
     border: 5px solid #9DBF21;
     margin: auto;
     border-radius: 15px;
+    height: 80vh;
 }
 
 .content .menu-visible{
     margin-top: 80px;
 }
+
+/*
+1366 x 768*/
