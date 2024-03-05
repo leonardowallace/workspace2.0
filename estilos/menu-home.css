@@ -6,6 +6,13 @@
     font-size: 3.4rem;
 }
 
+.profile{
+    display: flex;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo{
     width: 80px;
     background-color: white;
