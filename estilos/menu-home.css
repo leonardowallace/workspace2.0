@@ -54,3 +54,7 @@
 .menu span:hover{
     color: #007BFF;
 }
+
+.menu li:hover{
+    color: #007BFF;
+}
