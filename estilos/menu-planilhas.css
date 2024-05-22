@@ -433,4 +433,20 @@ img {
   .frame{
     position: absolute;
     width: 97vw;
+    border: none
+    margin: auto;
+    border-radius: 15px;
+    height: 89vh;
   }
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader__data{
+  position: relative;
+  top: -50%;
+}
