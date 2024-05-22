@@ -26,6 +26,8 @@ const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
       //quando clicar em um nav__link remover a classe show-menu
       navMenu.classList.remove('show-menu')
+      navToggle.style.display ="flex"
+
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
