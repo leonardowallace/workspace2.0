@@ -236,10 +236,13 @@ img {
       font-weight: var(--font-bold);
     }
   
+    .nav__logo img{
+    }
+
     .nav__toggle,
     .nav__close{
-      font-size: 1.5rem;
-      color: var(--title-color);
+      font-size: 2.5rem;
+      color: var(--first-color-light);
       cursor: pointer;
     }
   /* Menu Mobile */
@@ -425,6 +428,7 @@ img {
   
   /*=============== HOME ===============*/
   .home__container{
+    height: 80vh;
     row-gap: 2rem;
     padding-top: 1rem;
   }
