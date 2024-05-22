@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="estilos/frame.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -17,34 +20,51 @@
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="header">
-        <div class="home">
-            <span><a href="index.html"><img class="logo" src="imagens/logo-stefanini.png" alt="Logo stefanini"></a></span>
-        </div>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="imagens/logo-stefanini-p.png" alt="">
+            </a>
 
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="menu">
-            <!-- Menu escondido -->
-            <div class="hidden-menu">
-                <ul>
-                    <li><a href="index.html">
-                        <span class="fa fa-home"></span>
-                    </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1_grGngHtpUSamd_xadMOxOE3ddzMwhgQ2Q3PztCJfVo/edit#gid=141991203" target="frame" class="nav__link">KB's</a>
                     </li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1vNRidGoe-U38nulWFm9MMWzL-mCXh5w7JtUTRCB1iWA/edit#gid=1157192355" target="frame">Inventário</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/14w1sOH9Wn8Hvj4fwCaA_9yWMBeGNIxBw/edit#gid=1092103911" target="frame">Office</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1Qec2qbl1TVuxItedCi6GoSurSth9p3md/edit#gid=356281492" target="frame">Impressoras</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1_grGngHtpUSamd_xadMOxOE3ddzMwhgQ2Q3PztCJfVo/edit#gid=141991203" target="frame">KB's</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="content">
-        <iframe class="frame" name="frame" id="iframeContent" src="iframe.html" width="95%" height="" frameborder="0" allowfullscreen></iframe>
-    </div>
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1Qec2qbl1TVuxItedCi6GoSurSth9p3md/edit#gid=356281492"  class="nav__link" target="frame">Impressoras</a>
+                    </li>
+
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/14w1sOH9Wn8Hvj4fwCaA_9yWMBeGNIxBw/edit#gid=1092103911" class="nav__link" target="frame">Office</a>
+                    </li>
+
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/1vNRidGoe-U38nulWFm9MMWzL-mCXh5w7JtUTRCB1iWA/edit#gid=1157192355" class="nav__link" target="frame">Inventário</a>
+                    </li>
+                </ul>
+
+                <!--Close-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+
+            <!--Menu-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fold-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=========HOME===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <iframe class="frame" name="frame" id="iframeContent" src="iframe.html" width="95%" height="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
 
     <script src="menu.js"></script>
 </body>
