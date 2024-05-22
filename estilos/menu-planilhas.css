@@ -9,7 +9,6 @@
     --title-color: hsl(var(--hue), 30%, 95%);
     --text-color: hsl(var(--hue), 20%, 80%);
     --text-color-light: hsl(var(--hue), 20%, 70%);
-    --body-color: #034159;
     --container-color: #025951;
      /*========== Fontes ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -144,7 +143,16 @@ img {
   
   
     .nav__logo{
-      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 50rem;
+      font-size: 3rem;
+    }
+
+    .nav__img{
+      background-color: white;
       border-radius: 50%;
     }
   
@@ -153,60 +161,7 @@ img {
       font-size: 1.5rem;
       color: var(--title-color);
       cursor: pointer;
-    }
-  /* Menu Mobile */
-  @media screen and (max-width:1150px){
-    .nav__menu{
-      position: fixed;
-      top: 0;
-      right: -100%;
-      background-color: hsla(var(--hue), 70%, 4%, .2);
-      width: 80%;
-      height: 100%;
-      padding: 7rem 3rem;
-      transition: right .4s;
-    }
-  
-    .nav__list{
-      display: flex;
-      flex-direction: column;
-      row-gap: 3rem;
-    }
-  
-    .nav__link{
-      position: relative;
-      color: var(--first-color-light);
-      font-weight: var(--font-semi-bold);
-      transition: color .4s;
-    }
-  
-    .nav__link::after{
-      content: '';
-      width: 0;
-      height: 2px;
-      background-color: var(--first-color-light);
-      position: absolute;
-      left: 0;
-      bottom: -.5rem;
-      transition: width .3s;
-    }
-  
-    .nav__link:hover{
-      color: var(--first-color-light);
-    }
-  
-    .nav__link:hover::after{
-      width: 30%;
-    }
-  
-    .nav__close{
-      position:absolute;
-      top: 1rem;
-      right: 1.5rem;
-    }
-  }
-    
-  
+    }  
   /* Show menu */
   .show-menu{
     right: 0;
@@ -294,24 +249,16 @@ img {
     }
 
     .nav__toggle{
-      position: relative;
       right: -12vw;
   }
 
+  .nav__logo{
+    column-gap: 20rem;
+  }
+
     .frame{
-      position: absolute;
-      width: 97vw;
-      border: none;
-      margin: auto;
-      border-radius: 15px;
       height: 80vh;
     }
-  }
-    
-  
-  /* Show menu */
-  .show-menu{
-    right: 0;
   }
   
   @media screen and (min-width:1350px){
@@ -353,6 +300,10 @@ img {
     .nav__link:hover{
       color: var(--first-color-light);
     }
+
+    .nav__logo{
+      column-gap: 30rem;
+    }
   
     .nav__link:hover::after{
       width: 30%;
@@ -388,6 +339,10 @@ img {
     .frame{
       height: 89vh;
     }
+  }
+
+  .nav__logo{
+    column-gap: 50rem;
   }
     
   
