@@ -235,9 +235,6 @@ img {
       color: var(--title-color);
       font-weight: var(--font-bold);
     }
-  
-    .nav__logo img{
-    }
 
     .nav__toggle,
     .nav__close{
