@@ -8,6 +8,7 @@ const navMenu = document.getElementById('nav-menu'),
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
+        navToggle.style.display ="none"
     })
 }
 
@@ -15,6 +16,7 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
+        navToggle.style.display ="flex"
     })
 }
 /*=============== REMOVE MENU MOBILE ===============*/
@@ -26,13 +28,4 @@ const linkAction = () =>{
       navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*=============== MUDAR MENU HEADER ===============*/
-const blurHeader = () =>{
-      const header = document.getElementById('header')
-      //adicione uma classe se o deslocamento inferior for maior que 50 da janela de visualização
-      this.scrollY >= 50 ? header.classList.add('blur-header')
-                         :header.classList.remove('blur-header')
-}
-window.addEventListener('scroll', blurHeader)
 
