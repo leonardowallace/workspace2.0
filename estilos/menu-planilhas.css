@@ -185,10 +185,10 @@ img {
     align-items: center;
     }
   
-  
     .nav__logo{
       color: var(--title-color);
       font-weight: var(--font-bold);
+      column-gap: 50rem;
     }
 
     .nav__toggle,
@@ -196,6 +196,10 @@ img {
       font-size: 2.5rem;
       color: var(--first-color-light);
       cursor: pointer;
+    }
+
+    .nav__logo{
+      column-gap: 50rem;
     }
   /* Menu Mobile */
   @media screen and (max-width:1349px){
@@ -252,10 +256,6 @@ img {
       right: -12vw;
   }
 
-  .nav__logo{
-    column-gap: 20rem;
-  }
-
     .frame{
       height: 80vh;
     }
@@ -300,10 +300,6 @@ img {
     .nav__link:hover{
       color: var(--first-color-light);
     }
-
-    .nav__logo{
-      column-gap: 30rem;
-    }
   
     .nav__link:hover::after{
       width: 30%;
@@ -334,16 +330,13 @@ img {
       position: relative;
       right: -40vw;
   }
-
-
+    
     .frame{
       height: 89vh;
     }
   }
 
-  .nav__logo{
-    column-gap: 50rem;
-  }
+  
     
   
   /* Show menu */
