@@ -231,7 +231,7 @@ img {
     }
   }
   
-  @media screen and (min-width:1250px){
+  @media screen and (min-width:1260px){
     .nav__menu{
       position: fixed;
       top: 0;
@@ -277,7 +277,7 @@ img {
   
     .nav__toggle{
         position: relative;
-        right: -11vw;
+        right: -8vw;
     }
     .nav__close{
       position:absolute;
@@ -295,7 +295,7 @@ img {
     }
   }
 
-  @media screen and (min-width:1550px){
+  @media screen and (min-width:1450px){
     .nav__toggle{
       position: relative;
       right: -40vw;
