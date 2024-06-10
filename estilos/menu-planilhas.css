@@ -171,7 +171,7 @@ img {
 
 
   /* Menu Mobile */
-  @media screen and (max-width:1359px){
+  @media screen and (max-width:1250px){
     .nav__menu{
       position: fixed;
       top: 0;
@@ -226,6 +226,7 @@ img {
   }
 
     .frame{
+      width: 95vw;
       height: 80vh;
     }
   }
@@ -276,7 +277,7 @@ img {
   
     .nav__toggle{
         position: relative;
-        right: -16vw;
+        right: -15vw;
     }
     .nav__close{
       position:absolute;
