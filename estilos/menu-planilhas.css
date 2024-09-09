@@ -181,3 +181,10 @@ img {
       width: 97.8vw;
       height: 88.3vh;
     }
+
+
+    @media screen and (max-width: 1366px) {
+      .frame{
+        height: 82vh;
+      }
+    }
