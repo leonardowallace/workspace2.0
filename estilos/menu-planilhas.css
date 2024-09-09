@@ -185,6 +185,7 @@ img {
 
     @media screen and (max-width: 1366px) {
       .frame{
+        margin-left: -1%;
         height: 82vh;
       }
     }
