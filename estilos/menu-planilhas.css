@@ -178,14 +178,14 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 97.8vw;
-      height: 88.3vh;
+      width: 96.8vw;
+      height: 87.3vh;
     }
 
 
     @media screen and (max-width: 1366px) {
       .frame{
         margin-left: -1%;
-        height: 82vh;
+        height: 80vh;
       }
     }
